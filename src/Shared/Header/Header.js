@@ -33,8 +33,11 @@ const Header = () => {
                                 user?.uid || user?.photoURL ?
                                     <>
                                         <Nav.Link as={Link} to="/">Home</Nav.Link>
-                                        <Nav.Link as={Link} to="/reviews">My Reviwes</Nav.Link>
+                                        <Nav.Link as={Link} to="/myreviews">My Reviwes</Nav.Link>
+                                        <Nav.Link as={Link} to="/add">Add Services</Nav.Link>
                                         <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+                                        
+                                        
                                    </>
                                     :
                                     <Nav.Link as={Link} to="/blog">Blog</Nav.Link>

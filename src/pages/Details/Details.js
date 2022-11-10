@@ -8,9 +8,9 @@ import UserReview from '../../UserReview/UserReview';
 
 const Details = () => {
     const { user } = useContext(AuthorContext)
-    console.log(user);
     const details = useLoaderData()
     const {img, service_name, text, _id, tretment_price } = details;
+     
  
 
     const handdleReview = event => {
@@ -38,7 +38,7 @@ const Details = () => {
         })
             .then(res => res.json())
             .then(data => {
-                // console.log(data)
+               
                 if(data.acknowledged){
                     alert(' feedback successfully')
                     form.reset();     
@@ -51,7 +51,7 @@ const Details = () => {
     useEffect(()=>{
         fetch(`http://localhost:5000/feedback?service=${_id}`)
         .then(res => res.json())
-        .then(data =>  setReview(data))
+        .then(data => setReview(data))
     },[])
 
 

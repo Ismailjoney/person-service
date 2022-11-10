@@ -12,6 +12,7 @@ const Register = () => {
 
     const {createUser} = useContext(AuthorContext)
     const navigate = useNavigate()
+
     const handleRegistration = event => {
         event.preventDefault()
 
@@ -21,7 +22,7 @@ const Register = () => {
         const email = form.email.value;
         const password = form.password.value;
 
-        console.log(name, email, password,photoURl);
+        
 
 
           //create user account 
@@ -38,14 +39,7 @@ const Register = () => {
           })
 
     }
-
-
-
-
-
-
-
-
+ 
     return (
         <div className='w-50 mx-auto'>
             <Form onSubmit={handleRegistration}>

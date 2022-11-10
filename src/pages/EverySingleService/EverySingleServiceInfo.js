@@ -13,7 +13,7 @@ const EverySingleServiceInfo = ({service}) => {
         <Card.Body>
           <Card.Title>{service_name}</Card.Title>
           <Card.Text>
-          {text.length > 100 ? text.slice(0, 105) + '... ' : text}
+          {text.length > 50 ? text.slice(0, 25) + '... ' : text}
              <p className='fw-bold'> price: {tretment_price}</p>
           </Card.Text>
           <Button variant="primary">
