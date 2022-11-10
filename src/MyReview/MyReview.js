@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { AuthorContext } from '../AuthProvider/AuthContext';
 
 const MyReview = () => {
-    const {user} = 
+    const {user} = useContext(AuthorContext)
     useEffect(()=>{
         fetch(`http://localhost:5000/feedback`)
     },[])
