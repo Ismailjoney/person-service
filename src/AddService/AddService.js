@@ -1,7 +1,8 @@
- 
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -30,16 +31,16 @@ const AddService = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data)
+
                 if(data.acknowledged){
-                    alert('Order placed successfully')
                     form.reset();
-                    
                 }
             })
             .catch(er => console.error(er));
 
     }
-
+    //added toast
+    const notify = () => toast("Service add succesful");
 
 
     return (
@@ -66,10 +67,11 @@ const AddService = () => {
                     <Form.Control className=' pt-5 py-5' type="text" name="description" placeholder=" description" />
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
+                <Button onClick={notify} variant="primary" type="submit">
                     Submit
                 </Button>
             </Form>
+            <ToastContainer />
         </div>
     );
 };
