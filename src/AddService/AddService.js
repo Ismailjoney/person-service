@@ -13,13 +13,14 @@ const AddService = () => {
 
         const form = event.target;
         const imageurl = form.imageUrl.value;
-        const  name = form.name.value;
+        const  service_name= form.name.value;
         const  servicename = form.serviceName.value;
         const   text = form.description.value;
+        const tretment_price = form.description.value;
 
-        console.log(imageurl,name )
+        
 
-        const serviceInfo = {imageurl,name,servicename,text}
+        const serviceInfo = {imageurl,service_name,servicename,text,tretment_price}
 
         fetch('http://localhost:5000/Service', {
             method: 'POST',
@@ -70,13 +71,17 @@ const AddService = () => {
                     <Form.Label>Service Name</Form.Label>
                     <Form.Control type="text" name="serviceName" placeholder=" service Name"  />
                 </Form.Group>
+                <Form.Group className="mb-3" controlId="formGroupEmail">
+                    <Form.Label>Price</Form.Label>
+                    <Form.Control type="text" name="price" placeholder=" service Name"  />
+                </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formGroupPassword">
                     <Form.Label>Description</Form.Label>
-                    <Form.Control className=' pt-5 py-5' type="text" name="description" placeholder=" description"   />
+                    <Form.Control className=' pt-5 py-5' type="text" name="description" placeholder=" description"/>
                 </Form.Group>
 
-                <Button onClick={notify} variant="primary" type="submit">
+                <Button onClick={notify}  variant="outline-success" type="submit">
                     Submit
                 </Button>
             </Form>

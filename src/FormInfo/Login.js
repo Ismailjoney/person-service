@@ -70,7 +70,7 @@ const Login = () => {
             </Form>
             <p className='text-danger'> {error}</p>
             <p>If you new please <Link to='/register'>Register Now</Link> </p>
-            <Button onClick={googleSingIn} variant="secondary">Log In With Google</Button>
+            <Button onClick={googleSingIn}  variant="outline-success">Log In With Google</Button>
         </div>
     );
 };

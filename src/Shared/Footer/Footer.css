@@ -1,3 +1,6 @@
  #contain{
-    margin-top:30px;
+    margin:30px 0;
+    background-color: rgba(18, 7, 5, 0.808);
+    color:azure;
+    padding: 50px 20px;
  }

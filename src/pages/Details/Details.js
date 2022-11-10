@@ -56,10 +56,10 @@ const Details = () => {
 
 
     return (
-        <div>
+        <div className='w-75 mx-auto'>
             <section>
                 <Card  >
-                    <Card.Img variant="top" src={img} />
+                    <Card.Img className='w-100 h-50'  variant="top" src={img} />
                     <Card.Body>
                         <Card.Title>{service_name}</Card.Title>
                         <Card.Text>
@@ -73,8 +73,8 @@ const Details = () => {
             <section>
                 <Form onSubmit={handdleReview}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Feedback</Form.Label>
-                        <Form.Control className='p-5' type="text" name="message" placeholder="Write Your FeedBack" required />
+                        <Form.Label><h4 className='mt-5'>Write Your Feedback</h4></Form.Label>
+                        <Form.Control className='pt-5 py-5' type="text" name="message" placeholder="Write Your FeedBack" required />
                     </Form.Group>
                     <Button variant="primary" type="submit">
                         Submit

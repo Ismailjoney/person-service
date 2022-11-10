@@ -9,7 +9,7 @@ console.log(allServices)
 
 
     return (
-        <div>
+        <div  style={{width:'100%',margin:'0 auto'}} >
             {
                 allServices.map(service => <EverySingleServiceInfo
                 key={service._id}

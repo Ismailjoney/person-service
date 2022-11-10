@@ -62,7 +62,7 @@ const Register = () => {
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" name="password" placeholder="Password" required/>
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button  variant="outline-success" type="submit">
                     Submit
                 </Button>
             </Form>
