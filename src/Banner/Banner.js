@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import b1 from '../assets/BannerImages/b1.webp';
 import b2 from '../assets/BannerImages/b2.webp';
 import b3 from '../assets/BannerImages/b3.webp';
- 
+
 
 
 
@@ -19,8 +19,11 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>Responsibilities for Doctor</h3>
+                        <p>Perform routine check ups on patients
+                            Keep detailed notes of the patient
+                            Perform diagnostic tests to diagnose patients
+                            Recommend patients to see a specialist</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -31,8 +34,12 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Qualifications for Doctor</h3>
+                        <p>Doctorate degree from an accredited medical school
+                            Board certification and state license
+                            Exceptional time management and attention to detail
+                            Strong leadership skills
+                            Great communication skills to talk with patients about treatment options</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
