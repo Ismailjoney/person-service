@@ -34,13 +34,22 @@ const AddService = () => {
 
                 if(data.acknowledged){
                     form.reset();
+                     //added toast
+    
+ 
+   
                 }
             })
             .catch(er => console.error(er));
 
     }
-    //added toast
-    const notify = () => toast("Service add succesful");
+   
+    const notify = () => toast("Service add succesful",{
+        position: "top-center",
+        theme:"dark"
+    });
+
+
 
 
     return (
@@ -54,17 +63,17 @@ const AddService = () => {
 
                 <Form.Group className="mb-3" controlId="formGroupPassword">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" name="name" placeholder="name" />
+                    <Form.Control type="text" name="name" placeholder="name"  />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formGroupEmail">
                     <Form.Label>Service Name</Form.Label>
-                    <Form.Control type="text" name="serviceName" placeholder=" service Name" />
+                    <Form.Control type="text" name="serviceName" placeholder=" service Name"  />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formGroupPassword">
                     <Form.Label>Description</Form.Label>
-                    <Form.Control className=' pt-5 py-5' type="text" name="description" placeholder=" description" />
+                    <Form.Control className=' pt-5 py-5' type="text" name="description" placeholder=" description"   />
                 </Form.Group>
 
                 <Button onClick={notify} variant="primary" type="submit">

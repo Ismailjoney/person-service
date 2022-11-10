@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const MyReview = () => {
-    
+    const {user} = 
+    useEffect(()=>{
+        fetch(`http://localhost:5000/feedback`)
+    },[])
     return (
         <div>
             
