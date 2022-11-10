@@ -19,7 +19,8 @@ const UserReview = ({ rvw, user }) => {
                             roundedCircle
                             src={user?.photoURL}
                         ></Image>
-                       <p> {user?.displayName ? user?.displayName : 'no name'}</p>
+                       <p> {user?.displayName ? user.displayName : 'no name'}</p>
+                       <p>{user.email}</p>
                         <p> {message}</p>
                     </>
                     :

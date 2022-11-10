@@ -1,6 +1,6 @@
 import React, { useContext }  from 'react';
 import { Button, Container, Image, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthorContext } from '../../AuthProvider/AuthContext';
  
  
@@ -8,10 +8,12 @@ import { AuthorContext } from '../../AuthProvider/AuthContext';
 
 const Header = () => {
      const {user, logOut} = useContext(AuthorContext);
+     const navigate = useNavigate()
     
 
      const handleLogout = () => {
         logOut()
+        navigate('/blog')
             .then(() => {})
             .catch((error) => console.error(error))
     }
