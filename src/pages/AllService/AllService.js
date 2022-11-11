@@ -9,8 +9,8 @@ const AllService = ({ service }) => {
 
     return (
             <div>
-                <Col style={{width:'360px'}}  className='mt-5'>
-                    <Card >
+                <Col style={{width:'360px'}}  className=' '>
+                    <Card>
                         <Card.Img style={{ width: '100%', height: `200px` }} variant="top" src={img} />
                         <Card.Body>
                             <Card.Title>{service_name}</Card.Title>

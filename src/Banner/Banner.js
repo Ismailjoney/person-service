@@ -19,7 +19,7 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption className='text-dark fw-bold'>
-                        <h2>Responsibilities for Doctor</h2>
+                        <h3>Responsibilities for Doctor</h3>
                         <p>Perform routine check ups on patients
                             Keep detailed notes of the patient
                             Perform diagnostic tests to diagnose patients
@@ -34,7 +34,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption  className='text-dark fw-bold'>
-                        <h2>Qualifications for Doctor</h2>
+                        <h3>Qualifications for Doctor</h3>
                         <p> 
                             attention to detail
                             Strong leadership skills
@@ -48,9 +48,9 @@ const Banner = () => {
                         alt="Third slide"
                     />
 
-                    <Carousel.Caption  className='text-dark fw-bold'>
-                        <h2>Doctor skills and qualifications</h2>
-                        <p>
+                    <Carousel.Caption  className='text-dark fw-bold mt-5'>
+                        <h3>Doctor skills and qualifications</h3>
+                        <p className='sm-d-none' >
                         A successful Doctor will have certain qualifications and skills in order to demonstrate their ability to perform the duties and responsibilities of the job effectively:
                         </p>
                     </Carousel.Caption>

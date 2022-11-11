@@ -9,8 +9,8 @@ const Service = () => {
 
     return (
         <div>
-            <h2 className='text-center'>Service Information</h2>
-            <Row sm={12} lg={4} className=''  >
+            <h2 className='text-center  '>Service Information</h2>
+            <Row sm={12} lg={4} className='d-flex justify-content-evenly'>
                 {
                     services.map(service => <AllService
                         key={service._id}
