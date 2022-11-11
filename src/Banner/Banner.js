@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import b1 from '../assets/BannerImages/b1.webp';
 import b2 from '../assets/BannerImages/b2.webp';
 import b3 from '../assets/BannerImages/b3.webp';
-
+import './Banner.css';
 
 
 
@@ -11,15 +11,15 @@ import b3 from '../assets/BannerImages/b3.webp';
 const Banner = () => {
     return (
         <div>
-            <Carousel>
+            <Carousel className='carousel-img' >
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
                         src={b1}
                         alt="First slide"
                     />
-                    <Carousel.Caption>
-                        <h3>Responsibilities for Doctor</h3>
+                    <Carousel.Caption className='text-dark fw-bold'>
+                        <h2>Responsibilities for Doctor</h2>
                         <p>Perform routine check ups on patients
                             Keep detailed notes of the patient
                             Perform diagnostic tests to diagnose patients
@@ -33,11 +33,10 @@ const Banner = () => {
                         alt="Second slide"
                     />
 
-                    <Carousel.Caption>
-                        <h3>Qualifications for Doctor</h3>
-                        <p>Doctorate degree from an accredited medical school
-                            Board certification and state license
-                            Exceptional time management and attention to detail
+                    <Carousel.Caption  className='text-dark fw-bold'>
+                        <h2>Qualifications for Doctor</h2>
+                        <p> 
+                            attention to detail
                             Strong leadership skills
                             Great communication skills to talk with patients about treatment options</p>
                     </Carousel.Caption>
@@ -49,10 +48,10 @@ const Banner = () => {
                         alt="Third slide"
                     />
 
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
+                    <Carousel.Caption  className='text-dark fw-bold'>
+                        <h2>Doctor skills and qualifications</h2>
                         <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                        A successful Doctor will have certain qualifications and skills in order to demonstrate their ability to perform the duties and responsibilities of the job effectively:
                         </p>
                     </Carousel.Caption>
                 </Carousel.Item>

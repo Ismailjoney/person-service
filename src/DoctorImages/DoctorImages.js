@@ -15,23 +15,23 @@ const DoctorImages = () => {
 
                 A doctor should have at least 4 years of experience in residency as well as a doctorate degree from an accredited medical school. One of the most important skills that a doctor will have is their ability to diagnose their patients. Another skill is empathy as the doctor will need to relate to their patients. They also need to be able to multitask by working with several different patients.
             </h6>
-            <Row sm={12} md={6} lg={3} className='g-5'>
-                <Col className='border'>
+            <Row  md={6} lg={3} className='g-5'>
+                <Col sm={12} className='border'>
                     <img className='w-100' src={card1} alt="" />
                 </Col>
-                <Col>
+                <Col sm={12}>
                     <img className='w-100' src={card2} alt="" />
                 </Col>
-                <Col>
+                <Col sm={12}>
                     <img className='w-100' src={card3} alt="" />
                 </Col>
-                <Col>
+                <Col sm={12}>
                     <img className='w-100' src={card4} alt="" />
                 </Col>
-                <Col>
+                <Col sm={12}>
                     <img className='w-100' src={card5} alt="" />
                 </Col>
-                <Col>
+                <Col sm={12}>
                     <img className='w-100' src={card6} alt="" />
                 </Col>
 

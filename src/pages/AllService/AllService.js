@@ -4,15 +4,12 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 
-
-
 const AllService = ({ service }) => {
     const { img, service_name, text, _id } = service;
 
     return (
-        <div>
             <div>
-                <Col className='ms-2 me-2 mt-5    '   >
+                <Col style={{width:'360px'}}  className='mt-5'>
                     <Card >
                         <Card.Img style={{ width: '100%', height: `200px` }} variant="top" src={img} />
                         <Card.Body>
@@ -25,10 +22,7 @@ const AllService = ({ service }) => {
                     </Card>
                 </Col>
             </div>
-        
-           
-        </div>
-        
+   
     );
 };
 

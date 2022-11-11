@@ -12,7 +12,7 @@ const AddService = () => {
         event.preventDefault()
 
         const form = event.target;
-        const imageurl = form.imageUrl.value;
+        const img = form.imageUrl.value;
         const  service_name= form.name.value;
         const  servicename = form.serviceName.value;
         const   text = form.description.value;
@@ -20,7 +20,7 @@ const AddService = () => {
 
         
 
-        const serviceInfo = {imageurl,service_name,servicename,text,tretment_price}
+        const serviceInfo = {img,service_name,servicename,text,tretment_price}
 
         fetch('http://localhost:5000/Service', {
             method: 'POST',
