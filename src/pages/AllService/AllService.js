@@ -14,7 +14,6 @@ const AllService = ({ service }) => {
                         <Card.Img style={{ width: '100%', height: `200px` }} variant="top" src={img} />
                         <Card.Body>
                             <Card.Title>{service_name}</Card.Title>
-                            {/* <p className='fw-bold'>Tretment Coast :{tretment_price}</p> */}
                             <Card.Text>
                                 {text.length > 100 ? text.slice(0, 105) + '... ' : text}
                             </Card.Text>
